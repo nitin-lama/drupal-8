@@ -1,0 +1,70 @@
+<?php
+//use Drupal\Core\Database\Database;
+/*
+* Implements Hook Schema
+*/
+
+function custom_form_schema() {
+  $schema['custom_example'] = array(
+    // Example (partial) specification for table "node".
+    'description' => 'An example table.',
+    'fields' => array(
+      'form_id' => array(
+        'description' => 'Primary Form ID',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+
+      'Full_name' => array(
+        'description' => 'Full Name.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'Email' => array(
+        'description' => 'Email',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+
+      'Mobile_No' => array(
+        'description' => 'Mobile No.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+
+      'DOB' => array(
+        'description' => 'Date of Birth',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+
+      'Gender' => array(
+        'description' => 'Gender of the candidate',
+        'type' => 'varchar',
+        'length' => 255,
+        'default' => '',
+      ),
+
+      'Adult' => array(
+        'description' => 'Above 18 years ?',
+        'type' => 'varchar',
+        'length' => 255,
+        'default' => '',
+      ),
+    ),
+    'primary key' => array(
+      'form_id',
+    ),
+  );
+
+  return $schema;
+}

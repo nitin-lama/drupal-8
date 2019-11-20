@@ -1,0 +1,43 @@
+<?php
+/*
+* Implements Hook Schema
+*/
+
+function form_example_schema() {
+  $schema['form_example'] = array(
+    // Example (partial) specification for table "node".
+    'description' => 'An example table.',
+    'fields' => array(
+      'fo_id' => array(
+        'description' => 'The primary identifier for my custom form',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'Full_name' => array(
+        'description' => 'The current {node_field_revision}.vid version identifier.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'Email' => array(
+        'description' => 'The Email type of this node.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'Mobile_No' => array(
+      'description' => 'Mobile No storing',
+      'type' => 'int',
+      'not null' => TRUE,
+      'default' => 0,
+      ),
+    ),
+    'primary key' => array(
+      'fo_id',
+    ),
+  );
+  return $schema;
+}

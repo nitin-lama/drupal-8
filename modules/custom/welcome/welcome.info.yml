@@ -1,0 +1,5 @@
+name: Welcome
+type: module
+description: Displays a message when users log in
+package: custom
+core: 8.x

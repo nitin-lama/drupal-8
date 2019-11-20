@@ -1,0 +1,5 @@
+name: form_example1
+description: This is form table example
+type: module
+package: custom
+core: 8.x

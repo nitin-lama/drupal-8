@@ -1,0 +1,15 @@
+custom_form.custom_form:
+  path: '/custom-form'
+  defaults:
+    _form: '\Drupal\custom_form\Form\CustomForm'
+    _title: 'Custom Form'
+  requirements:
+    _permission: 'access content'
+
+custom_form.custom_view:
+  path: '/form-data'
+  defaults:
+    _controller: '\Drupal\custom_form\Controller\TestController::test'
+    _title: 'Custom Form'
+  requirements:
+    _permission: 'access content'

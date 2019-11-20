@@ -1,0 +1,5 @@
+name: simple form
+description: Simple Form Module
+type: module
+package: custom
+core: 8.x

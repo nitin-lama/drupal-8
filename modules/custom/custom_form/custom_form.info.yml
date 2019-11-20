@@ -1,0 +1,7 @@
+name: Custom Form
+description: Custom Form Module
+type: module
+package: custom
+core: 8.x
+dependencies:
+  -view_custom_table
